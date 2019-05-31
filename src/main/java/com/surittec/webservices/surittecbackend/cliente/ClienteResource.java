@@ -24,7 +24,7 @@ public class ClienteResource {
 		
 	@GetMapping(path = "/users/{username}/clientes")
 	public List<Cliente> getAllclientes(@PathVariable String username) {
-		return clienteRepository.findByUsername(username);
+		return clienteRepository.findAll();
 	}
 
 	@GetMapping(path = "/users/{username}/clientes/{id}")
