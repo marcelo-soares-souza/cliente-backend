@@ -25,7 +25,7 @@ import com.surittec.webservices.surittecbackend.cliente.jwt.JwtTokenUtil;
 import com.surittec.webservices.surittecbackend.cliente.jwt.JwtUserDetails;
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="*")
 public class JwtAuthenticationRestController {
 
   @Value("${jwt.http.request.header}")
