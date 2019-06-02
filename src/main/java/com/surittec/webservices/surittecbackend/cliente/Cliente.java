@@ -19,8 +19,8 @@ public class Cliente {
 	private String bairro;
 	private String cidade;
 	private String uf;
-	private String telefone;
-	private String email;
+	private String[] telefones;
+	private String[] emails;
     
 	protected Cliente() {
 		
@@ -105,20 +105,20 @@ public class Cliente {
 		this.uf = uf;
 	}
 
-	public String getTelefone() {
-		return telefone;
+	public String[] getTelefones() {
+		return telefones;
 	}
 
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+	public void setTelefones(String[] telefones) {
+		this.telefones = telefones;
 	}
 
-	public String getEmail() {
-		return email;
+	public String[] getEmails() {
+		return emails;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmails(String[] emails) {
+		this.emails = emails;
 	}
 
 	@Override
